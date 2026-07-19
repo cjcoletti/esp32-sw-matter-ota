@@ -1,22 +1,10 @@
 # Magic Button — firmware IDF
 
-Firmware Matter (**On/Off Plugin Unit**) para ESP32-C6 Super Mini.
+Este repo faz parte do projeto de um interruptor inteligente que envia o estado de um interruptor simples para seu Hub de automação (Alexa, Google Home, Apple Casa, Home Assistant) via protocolo Matter. 
 
-Identidade: vendor **CJC**, product **Magic Button**, VID/PID de teste `0xFFF1` / `0x8000`, versão `1.0` (`PROJECT_VER_NUMBER` 1).
+Contem o Firmware Matter (**On/Off Plugin Unit**) para ESP32-C6 Super Mini criado com a stack da Espressif.
 
-## Build
-
-```bash
-source ~/esp-idf/export.sh
-export PW_ACTIVATE_SKIP_CHECKS=1
-source ~/esp-matter/export.sh
-
-cd idf
-idf.py set-target esp32c6
-idf.py build
-```
-
-Flash e testes na placa: ver [../README.md](../README.md) e o plano **Magic Button Flash**.
+Build, Flash e testes na placa: ver [../README.md](../README.md).
 
 ## Fontes
 

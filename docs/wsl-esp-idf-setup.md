@@ -144,10 +144,10 @@ idfenv
 
 ## 6. Obter o projeto Magic Button
 
-### Opção A — projeto já em `/mnt/c/...` (Windows)
+### Opção A (Windows)
 
 ```bash
-cd /mnt/c/mnt/caminho-do-repo/esp32-sw-matter-ota
+cd esp32-sw-matter-ota
 ```
 
 Funciona para build, mas é mais lento que copiar para `~/`.
@@ -155,13 +155,13 @@ Funciona para build, mas é mais lento que copiar para `~/`.
 ### Opção B — copiar para `~/` (recomendado para build frequente)
 
 ```bash
-cp -a /mnt/c/mnt/caminho-do-repo/esp32-sw-matter-ota ~/esp32-sw-matter-ota
+cp -a /mnt/caminho-do-repo/esp32-sw-matter-ota ~/esp32-sw-matter-ota
 cd ~/esp32-sw-matter-ota
 ```
 
 ---
 
-## 7. Compilar o firmware (sem flash)
+## 7. Compilar o firmware
 
 Com o ambiente exportado (`idfenv`):
 
@@ -177,13 +177,11 @@ idf.py build
 
 Sucesso: artefatos em `idf/build/` (ex.: `matter_magic_button.bin`).
 
-**Neste passo não execute** `flash`, `erase_flash` nem `monitor` — isso fica no plano **Magic Button Flash** (quando a placa chegar).
-
 ---
 
 ## 8. USB da placa no WSL (para flash futuro)
 
-Quando a ESP32-C6 Super Mini estiver disponível:
+Conectar a ESP32-C6 Super Mini na USB:
 
 ### No Windows
 
@@ -203,7 +201,7 @@ usbipd attach --wsl --busid <BUSID>
 ls /dev/ttyACM* /dev/ttyUSB* 2>/dev/null
 ```
 
-Flash (quando for a hora):
+Flash:
 
 ```bash
 idfenv

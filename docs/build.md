@@ -7,7 +7,6 @@ Todas as compilações devem ser feitas no **WSL** (Ubuntu), não no PowerShell 
 Na raiz do repositório:
 
 ```bash
-cd /mnt/c/mnt/caminho-do-repo/esp32-sw-matter-ota
 bash scripts/build_wsl.sh
 ```
 
@@ -18,7 +17,6 @@ O script carrega ESP-IDF + esp-matter, define o target `esp32c6` e executa o bui
 Se você já abriu um terminal WSL novo (o `~/.bashrc` já exporta o ambiente), basta:
 
 ```bash
-cd /mnt/c/mnt/caminho-do-repo/esp32-sw-matter-ota/idf
 idf.py build
 ```
 
@@ -30,7 +28,7 @@ export PW_ACTIVATE_SKIP_CHECKS=1
 source ~/esp-matter/export.sh
 export IDF_CCACHE_ENABLE=1
 
-cd /mnt/c/mnt/caminho-do-repo/esp32-sw-matter-ota/idf
+cd idf
 idf.py set-target esp32c6   # só uma vez
 idf.py build
 ```

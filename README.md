@@ -2,12 +2,12 @@
 
 Interruptor Matter Wi-Fi (**On/Off Plugin Unit**) com **ESP-IDF + esp-matter**.
 
-| Campo | Valor |
-|-------|--------|
-| Vendor name | `CJC` |
+
+| Campo        | Valor          |
+| ------------ | -------------- |
+| Vendor name  | `CJC`          |
 | Product name | `Magic Button` |
-| VID / PID | `0xFFF1` / `0x8000` (teste) |
-| Versão | `PROJECT_VER` `1.0` · `PROJECT_VER_NUMBER` `1` |
+
 
 ## Estrutura
 
@@ -23,26 +23,34 @@ esp32-sw-matter-ota/
     └── main/
 ```
 
+
+
 ## Hardware
 
-| Sinal | GPIO | Notas |
-|-------|------|--------|
-| Interruptor | **14** | Pull-up; LOW = fechado. Aceita **pulsador** ou **interruptor simples** (detecção automática) |
-| LED status | **15** | Espelha OnOff; Identify; feedback de decommission |
-| Decommission | **8** | Só pulsador; hold ≥ **5 s** → factory reset Matter |
+
+| Sinal        | GPIO   | Notas                                                                                        |
+| ------------ | ------ | -------------------------------------------------------------------------------------------- |
+| Interruptor  | **14** | Pull-up; LOW = fechado. Aceita **pulsador** ou **interruptor simples** (detecção automática) |
+| LED status   | **15** | Espelha OnOff; Identify; feedback de decommission                                            |
+| Decommission | **8**  | Só pulsador; hold ≥ **5 s** → factory reset Matter                                           |
+
+
+
 
 ### Detecção do interruptor (GPIO14)
 
-| Hardware | Detecção | Comportamento |
-|----------|----------|----------------|
-| Pulsador | Pressão curta e soltura (&lt; 800 ms) | Cada clique **alterna** OnOff |
-| Interruptor simples | Pressão contínua ≥ 800 ms | OnOff **segue** a posição física (LOW=ON) |
+
+| Hardware            | Detecção                           | Comportamento                             |
+| ------------------- | ---------------------------------- | ----------------------------------------- |
+| Pulsador            | Pressão curta e soltura (< 800 ms) | Cada clique **alterna** OnOff             |
+| Interruptor simples | Pressão contínua ≥ 800 ms          | OnOff **segue** a posição física (LOW=ON) |
+
 
 Interruptor simples já fechado no boot: detectado automaticamente após ~800 ms.
 
-## Ambiente (WSL2)
+## Ambiente de stack da Espressif
 
-Repos em `~/` (não em `/mnt/c`):
+Repos da Espressif:
 
 ```bash
 source ~/esp-idf/export.sh
@@ -53,9 +61,9 @@ export IDF_CCACHE_ENABLE=1
 
 Requer ESP-IDF **stable** e `esp-matter` compatível, com `ESP_MATTER_PATH` definido pelo `export.sh`.
 
-## Build (sem flash)
+## Build
 
-A placa pode ainda não estar disponível. Compilar apenas **no WSL** (recomendado copiar o projeto para `~/` ou usar `/mnt/c/...`):
+Compilar o código:
 
 ```bash
 # Opção A — script
@@ -70,13 +78,11 @@ idf.py set-target esp32c6
 idf.py build
 ```
 
-**Não** execute `flash` / `erase_flash` / `monitor` neste passo.
 
-Flash, pairing, testes de GPIO e OTA no Home Assistant estão no plano separado **Magic Button Flash**.
 
-### Pré-requisito WSL
+### Pré-requisito para máquinas com Windows
 
-É necessário uma distro WSL com ESP-IDF stable (ex. 5.5.4) e esp-matter exportáveis.
+Caso utilize Windows, é necessário uma distro WSL 2 para ter plena compatibilidade com o ESP-IDF stable (ex. 5.5.4) e esp-matter exportáveis.
 
 **Guia completo:** [docs/wsl-esp-idf-setup.md](docs/wsl-esp-idf-setup.md) (instalar Ubuntu, ESP-IDF, esp-matter e compilar o projeto).
 
@@ -90,11 +96,9 @@ chip-tool pairing ble-wifi <node_id> <ssid> <pass> 20202021 3840
 
 Ou app Matter (Home Assistant / Google Home / Alexa) com QR/código do monitor.
 
-No Home Assistant o Plugin Unit aparece como `switch` com `device_class=outlet` (tomada). Se quiser ícone de interruptor: *Show as → Switch*.
+## OTA (Over The Air)
 
-## OTA
-
-O firmware já habilita `CONFIG_ENABLE_OTA_REQUESTOR` e usa partições `ota_0` / `ota_1`.
+O firmware já habilita `CONFIG_ENABLE_OTA_REQUESTOR` e usa partições `ota_0` / `ota_1`. Isso garante que o dispositivo possa ser atualizado pela rede sem fio.
 
 Para um novo release: incrementar `PROJECT_VER_NUMBER` (e a string `PROJECT_VER`) em `idf/CMakeLists.txt`, gerar a imagem Matter OTA e publicar via Home Assistant (detalhes no plano de flash).
 

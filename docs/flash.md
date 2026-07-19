@@ -91,10 +91,10 @@ Se o `~/.bashrc` já foi configurado, um terminal novo já carrega isso.
 Vá para o diretório do firmware:
 
 ```bash
-cd /mnt/c/mnt/caminho-do-repo/esp32-sw-matter-ota/idf
+cd /mnt/caminho-do-repo/esp32-sw-matter-ota/idf
 ```
 
-(Substitua pelo caminho do seu clone, se diferente.)
+(Substitua pelo caminho do seu clone.)
 
 ---
 
