@@ -1,5 +1,7 @@
 # Guia: WSL + ESP-IDF + esp-matter (Ubuntu 24.04)
 
+**Idioma / Language:** Português · [English](en/wsl-esp-idf-setup.md)
+
 Ambiente de desenvolvimento para compilar o firmware **Magic Button** (ESP32-C6 Super Mini + Matter) no Windows via **WSL2**.
 
 | Item | Valor recomendado |
@@ -245,4 +247,4 @@ Substitua `/dev/ttyACM0` pela porta detectada.
 - [ESP-IDF — Get Started](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/get-started/index.html)
 - [esp-matter — Developing](https://docs.espressif.com/projects/esp-matter/en/latest/esp32c6/developing.html)
 - [usbipd-win](https://github.com/dorssel/usbipd-win)
-- README do projeto: [../README.md](../README.md)
+- README do projeto: [../README.md](../README.md) ([EN](../README.en.md))

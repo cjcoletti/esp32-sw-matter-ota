@@ -1,5 +1,7 @@
 # Como gravar (flash) o firmware na placa
 
+**Idioma / Language:** Português · [English](en/flash.md)
+
 Guia para gravar o **Magic Button** na **ESP32-C6 Super Mini** a partir do **WSL2** no Windows.
 
 | Item | Valor |
@@ -240,6 +242,6 @@ Feche e abra o terminal WSL para aplicar.
 
 ## Ver também
 
-- [build.md](build.md) — compilar após alterar código
-- [wsl-esp-idf-setup.md](wsl-esp-idf-setup.md) — instalação do ambiente
-- [../README.md](../README.md) — hardware, OTA e decommission
+- [build.md](build.md) — compilar após alterar código ([EN](en/build.md))
+- [wsl-esp-idf-setup.md](wsl-esp-idf-setup.md) — instalação do ambiente ([EN](en/wsl-esp-idf-setup.md))
+- [../README.md](../README.md) — hardware, OTA e decommission ([EN](../README.en.md))

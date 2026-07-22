@@ -1,5 +1,7 @@
 # Como compilar após alterar o código
 
+**Idioma / Language:** Português · [English](en/build.md)
+
 Todas as compilações devem ser feitas no **WSL** (Ubuntu), não no PowerShell do Windows.
 
 ## Forma rápida (recomendada)
@@ -63,9 +65,9 @@ Compilar a partir de `~/` (ex.: copiar o repo para `~/esp32-sw-matter-ota`) é m
 
 ## Flash
 
-Este projeto está no passo **só build**. Não execute `flash`, `erase_flash` nem `monitor` até o plano **Magic Button Flash**.
+Este guia cobre **apenas build**. Para gravar na placa, veja [flash.md](flash.md) ([EN](en/flash.md)).
 
 ## Ver também
 
-- [wsl-esp-idf-setup.md](wsl-esp-idf-setup.md) — instalação do ambiente WSL + ESP-IDF + esp-matter
-- [../README.md](../README.md) — visão geral do projeto
+- [wsl-esp-idf-setup.md](wsl-esp-idf-setup.md) — instalação do ambiente WSL + ESP-IDF + esp-matter ([EN](en/wsl-esp-idf-setup.md))
+- [../README.md](../README.md) — visão geral do projeto ([EN](../README.en.md))

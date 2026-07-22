@@ -1,5 +1,7 @@
 # Magic Button — Matter (ESP32-C6 Super Mini)
 
+[![Português](https://img.shields.io/badge/README-Português-blue)](README.md)
+[![English](https://img.shields.io/badge/README-English-blue)](README.en.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Interruptor Matter Wi-Fi (**On/Off Plugin Unit**) com **ESP-IDF + esp-matter**.
@@ -26,8 +28,10 @@ Interruptor Matter Wi-Fi (**On/Off Plugin Unit**) com **ESP-IDF + esp-matter**.
 ```text
 esp32-sw-matter-ota/
 ├── README.md
+├── README.en.md
 ├── LICENSE
 ├── .gitignore
+├── docs/                # guias (PT); versão EN em docs/en/
 └── idf/                 # firmware ESP-IDF + esp-matter
     ├── CMakeLists.txt
     ├── partitions.csv
@@ -87,7 +91,7 @@ idf.py build
 
 Caso utilize Windows, é necessário uma distro WSL 2 para ter plena compatibilidade com o ESP-IDF stable (ex. 5.5.4) e esp-matter exportáveis.
 
-**Guia completo:** [docs/wsl-esp-idf-setup.md](docs/wsl-esp-idf-setup.md) (instalar Ubuntu, ESP-IDF, esp-matter e compilar o projeto).
+**Guia completo:** [docs/wsl-esp-idf-setup.md](docs/wsl-esp-idf-setup.md) (instalar Ubuntu, ESP-IDF, esp-matter e compilar o projeto). Versão em inglês: [docs/en/wsl-esp-idf-setup.md](docs/en/wsl-esp-idf-setup.md).
 
 ## Pairing (após flash)
 
@@ -103,7 +107,7 @@ Ou app Matter (Home Assistant / Google Home / Alexa) com QR/código do monitor.
 
 O firmware já habilita `CONFIG_ENABLE_OTA_REQUESTOR` e usa partições `ota_0` / `ota_1`. Isso garante que o dispositivo possa ser atualizado pela rede sem fio.
 
-Para um novo release: incrementar `PROJECT_VER_NUMBER` (e a string `PROJECT_VER`) em `idf/CMakeLists.txt`, gerar a imagem Matter OTA e publicar via Home Assistant. Ver [docs/flash.md](docs/flash.md) para gravar e comissionar.
+Para um novo release: incrementar `PROJECT_VER_NUMBER` (e a string `PROJECT_VER`) em `idf/CMakeLists.txt`, gerar a imagem Matter OTA e publicar via Home Assistant. Ver [docs/flash.md](docs/flash.md) para gravar e comissionar ([EN](docs/en/flash.md)).
 
 ## Decommission
 
