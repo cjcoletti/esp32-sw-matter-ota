@@ -6,7 +6,7 @@ Compact case for the **Magic Button** module (ESP32-C6 Super Mini + Hilink mini 
 
 ![3D-printed case — base and lid](case-matter-switch.png)
 
-> Parametric model **V16.3** — boards side by side, snap-fit rails, Ø8 hole centered in the gap, and USB-C opening for ESP32 deploy/debug via JTAG.
+> Model **V16.3** — boards side by side, snap-fit rails, Ø8 hole centered in the gap, and USB-C opening for ESP32 deploy/debug via JTAG.
 
 ## Files
 
@@ -33,7 +33,7 @@ Compact case for the **Magic Button** module (ESP32-C6 Super Mini + Hilink mini 
 | PSU | 20 × 34 × (15 + 5) (width × depth × height (PSU + pins)) | Flat |
 | ESP32-C6 | 18 × 25 × 20 (width × depth × height) | Upright |
 
-CAD fit clearance: **0.3 mm** (`folga_encaixe`).
+Fit clearance: **0.3 mm**.
 
 ## Internal layout
 

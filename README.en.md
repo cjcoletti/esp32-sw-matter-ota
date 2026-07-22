@@ -36,7 +36,7 @@ esp32-sw-matter-ota/
 ├── .gitignore
 ├── .github/             # Issue templates
 ├── docs/                # guides (EN in docs/en/)
-├── enclosure-3D/        # 3D-printable enclosure (OpenSCAD + STL) for the module
+├── enclosure-3D/        # 3D-printable enclosure (STL) for the module
 └── idf/                 # ESP-IDF + esp-matter firmware
     ├── CMakeLists.txt
     ├── partitions.csv
@@ -64,7 +64,7 @@ Simple switch already closed at boot: detected automatically after ~800 ms.
 
 ## 3D enclosure
 
-Compact case to house the **Magic Button** with **ESP32-C6 Super Mini** and Hilink mini PSU — parametric OpenSCAD model (**V16.3**), snap-fit rails, USB-C opening, and wire pass-through.
+Compact case to house the **Magic Button** with **ESP32-C6 Super Mini** and Hilink mini PSU — model **V16.3**, snap-fit rails, USB-C opening, and wire pass-through.
 
 | Axis | mm |
 |------|-----|
@@ -72,7 +72,7 @@ Compact case to house the **Magic Button** with **ESP32-C6 Super Mini** and Hili
 | Depth (Y) | **38.3** |
 | Assembled height | **24.5** (base 22.5 + lid 2.0) |
 
-Full details (STL/OpenSCAD files, internal layout, print settings, and fasteners): **[enclosure-3D/README.en.md](enclosure-3D/README.en.md)**. Portuguese version: [enclosure-3D/README.md](enclosure-3D/README.md).
+Full details (STL files, internal layout, print settings, and fasteners): **[enclosure-3D/README.en.md](enclosure-3D/README.en.md)**. Portuguese version: [enclosure-3D/README.md](enclosure-3D/README.md).
 
 ## Espressif stack environment
 

@@ -36,7 +36,7 @@ esp32-sw-matter-ota/
 ├── .gitignore
 ├── .github/             # templates de Issues
 ├── docs/                # guias (PT); versão EN em docs/en/
-├── enclosure-3D/        # caixa 3D (OpenSCAD + STL) para o módulo
+├── enclosure-3D/        # caixa 3D (STL) para o módulo
 └── idf/                 # firmware ESP-IDF + esp-matter
     ├── CMakeLists.txt
     ├── partitions.csv
@@ -64,7 +64,7 @@ Interruptor simples já fechado no boot: detectado automaticamente após ~800 ms
 
 ## Gabarito / caixa 3D (enclosure)
 
-Caixa compacta para montar o **Magic Button** com **ESP32-C6 Super Mini** e mini fonte Hilink — modelo paramétrico OpenSCAD (**V16.3**), trilhos de encaixe por pressão, abertura USB-C e furo para fios.
+Caixa compacta para montar o **Magic Button** com **ESP32-C6 Super Mini** e mini fonte Hilink — modelo **V16.3**, trilhos de encaixe por pressão, abertura USB-C e furo para fios.
 
 | Eixo | mm |
 |------|-----|
@@ -72,7 +72,7 @@ Caixa compacta para montar o **Magic Button** com **ESP32-C6 Super Mini** e mini
 | Profundidade (Y) | **38,3** |
 | Altura montada | **24,5** (base 22,5 + tampa 2,0) |
 
-Detalhes completos (arquivos STL/OpenSCAD, layout interno, impressão e fixação): **[enclosure-3D/README.md](enclosure-3D/README.md)**. Versão em inglês: [enclosure-3D/README.en.md](enclosure-3D/README.en.md).
+Detalhes completos (arquivos STL, layout interno, impressão e fixação): **[enclosure-3D/README.md](enclosure-3D/README.md)**. Versão em inglês: [enclosure-3D/README.en.md](enclosure-3D/README.en.md).
 
 ## Ambiente de stack da Espressif
 

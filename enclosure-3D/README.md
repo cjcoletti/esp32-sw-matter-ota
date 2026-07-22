@@ -6,7 +6,7 @@ Caixa compacta para o módulo **Magic Button** (ESP32-C6 Super Mini + mini fonte
 
 ![Caixa 3D impressa — base e tampa](case-matter-switch.png)
 
-> Modelo paramétrico **V16.3** — placas dispostas lado a lado, trilhos de encaixe por pressão, furo Ø8 centralizado no vão e furo para a USB-C para deploy/debug da ESP32 via JTAG.
+> Modelo **V16.3** — placas dispostas lado a lado, trilhos de encaixe por pressão, furo Ø8 centralizado no vão e furo para a USB-C para deploy/debug da ESP32 via JTAG.
 
 ## Arquivos
 
@@ -33,7 +33,7 @@ Paredes **2 mm**; cantos externos arredondados (**r = 3 mm**).
 | Fonte | 20 × 34 × (15 + 5) (largura × profundidade × altura (fonte + pinos)) | Deitada |
 | ESP32-C6 | 18 × 25 × 20 (largura × profundidade × altura) | Em pé |
 
-Folga de encaixe no CAD: **0,3 mm** (`folga_encaixe`).
+Folga de encaixe: **0,3 mm**.
 
 ## Layout interno
 
