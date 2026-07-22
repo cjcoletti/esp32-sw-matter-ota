@@ -14,8 +14,6 @@ idf/managed_components/
 .idea/
 *.swp
 *.scad
-!enclosure-3D/
-!enclosure-3D/**
 .DS_Store
 Thumbs.db
 
