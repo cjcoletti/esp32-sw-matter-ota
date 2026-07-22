@@ -14,7 +14,6 @@ Compact case for the **Magic Button** module (ESP32-C6 Super Mini + Hilink mini 
 |------|---------|
 | `base.stl` | Case base (print) |
 | `tampa.stl` | Lid (print) |
-| `case.scad` | Parametric source (OpenSCAD) |
 | `case-matter-switch.png` | Photo of printed case (base + lid) |
 
 ## External dimensions

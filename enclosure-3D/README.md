@@ -14,7 +14,6 @@ Caixa compacta para o módulo **Magic Button** (ESP32-C6 Super Mini + mini fonte
 |---------|-----|
 | `base.stl` | Base da caixa (imprimir) |
 | `tampa.stl` | Tampa (imprimir) |
-| `case.scad` | Fonte paramétrica (OpenSCAD) |
 | `case-matter-switch.png` | Foto da caixa impressa (base + tampa) |
 
 ## Dimensões externas
