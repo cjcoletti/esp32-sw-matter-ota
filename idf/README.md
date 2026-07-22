@@ -4,7 +4,7 @@ Este repo faz parte do projeto de um interruptor inteligente que envia o estado 
 
 Contem o Firmware Matter (**On/Off Plugin Unit**) para ESP32-C6 Super Mini criado com a stack da Espressif.
 
-Build, Flash e testes na placa: ver [../README.md](../README.md).
+Build, flash e testes na placa: ver [../README.md](../README.md). Gabarito da caixa 3D: [../enclosure-3D/README.md](../enclosure-3D/README.md).
 
 ## Fontes
 
