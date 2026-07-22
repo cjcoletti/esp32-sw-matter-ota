@@ -31,6 +31,7 @@ esp32-sw-matter-ota/
 ├── README.en.md
 ├── CONTRIBUTING.md
 ├── CONTRIBUTING.en.md
+├── SECURITY.md
 ├── LICENSE
 ├── .gitignore
 ├── .github/             # templates de Issues
@@ -123,6 +124,10 @@ Este projeto é mantido de forma pessoal. **Sugestões e ideias são bem-vindas*
 eu mesmo, no meu ritmo. Você pode fazer fork livremente sob a licença MIT.
 
 Detalhes em [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Segurança
+
+Para reportar vulnerabilidades em privado, veja [SECURITY.md](SECURITY.md) (em inglês).
 
 ## Licença
 
