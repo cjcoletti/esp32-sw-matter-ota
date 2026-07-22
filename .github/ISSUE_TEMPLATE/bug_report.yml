@@ -1,0 +1,57 @@
+name: Reportar bug
+description: Algo não funcionou como esperado
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar! Descreva o que aconteceu — não é necessário enviar código ou Pull Request.
+        Detalhes em [CONTRIBUTING.md](https://github.com/cjcoletti/esp32-sw-matter-ota/blob/main/CONTRIBUTING.md).
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      description: O que deveria acontecer?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento observado
+      description: O que aconteceu de fato?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      description: Liste os passos na ordem em que executou.
+      placeholder: |
+        1. Flash do firmware vX.Y
+        2. Comissionamento via Home Assistant
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Hardware, hub Matter, versões relevantes.
+      placeholder: "Ex.: ESP32-C6 Super Mini, ESP-IDF 5.5.4, esp-matter (commit ou tag), Home Assistant 2025.x"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs ou mensagens (opcional)
+      description: Trechos do monitor serial ou do hub, se tiver.
+      render: shell
+    validations:
+      required: false

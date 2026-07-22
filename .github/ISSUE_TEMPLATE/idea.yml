@@ -1,0 +1,38 @@
+name: Ideia ou sugestão
+description: Proponha uma melhoria, funcionalidade ou caso de uso
+title: "[Ideia] "
+labels:
+  - idea
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por compartilhar sua ideia! Descreva em texto — não é necessário enviar código ou Pull Request.
+        Detalhes em [CONTRIBUTING.md](https://github.com/cjcoletti/esp32-sw-matter-ota/blob/main/CONTRIBUTING.md).
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: Qual problema ou oportunidade você identificou?
+      placeholder: "Ex.: Seria útil ter feedback visual diferente durante o OTA..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+      description: O que você sugere? Como imagina que funcionaria?
+      placeholder: "Ex.: Piscar o LED em padrão distinto enquanto o OTA estiver em andamento..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware / ambiente (opcional)
+      description: Placa, hub Matter, versão do ESP-IDF, etc.
+      placeholder: "Ex.: ESP32-C6 Super Mini, Home Assistant, ESP-IDF 5.5.4"
+    validations:
+      required: false

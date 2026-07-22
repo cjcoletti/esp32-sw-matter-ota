@@ -29,8 +29,10 @@ Interruptor Matter Wi-Fi (**On/Off Plugin Unit**) com **ESP-IDF + esp-matter**.
 esp32-sw-matter-ota/
 ├── README.md
 ├── README.en.md
+├── CONTRIBUTING.md
 ├── LICENSE
 ├── .gitignore
+├── .github/             # templates de Issues
 ├── docs/                # guias (PT); versão EN em docs/en/
 └── idf/                 # firmware ESP-IDF + esp-matter
     ├── CMakeLists.txt
@@ -112,6 +114,14 @@ Para um novo release: incrementar `PROJECT_VER_NUMBER` (e a string `PROJECT_VER`
 ## Decommission
 
 Manter GPIO8 em GND por ≥ 5 s: LED pisca rapidamente e o dispositivo faz `esp_matter::factory_reset()`. Remova o nó do hub e comissione novamente.
+
+## Contribuições
+
+Este projeto é mantido de forma pessoal. **Sugestões e ideias são bem-vindas** via [Issues](https://github.com/cjcoletti/esp32-sw-matter-ota/issues/new/choose)
+(ou Discussions). Por favor, **não envie Pull Requests** — prefiro implementar mudanças
+eu mesmo, no meu ritmo. Você pode fazer fork livremente sob a licença MIT.
+
+Detalhes em [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Licença
 

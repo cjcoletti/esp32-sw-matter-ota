@@ -29,8 +29,10 @@ Matter Wi-Fi switch (**On/Off Plugin Unit**) built with **ESP-IDF + esp-matter**
 esp32-sw-matter-ota/
 ├── README.md
 ├── README.en.md
+├── CONTRIBUTING.md
 ├── LICENSE
 ├── .gitignore
+├── .github/             # Issue templates
 ├── docs/                # guides (EN in docs/en/)
 └── idf/                 # ESP-IDF + esp-matter firmware
     ├── CMakeLists.txt
@@ -112,6 +114,14 @@ For a new release: bump `PROJECT_VER_NUMBER` (and the `PROJECT_VER` string) in `
 ## Decommission
 
 Hold GPIO8 to GND for ≥ 5 s: the LED blinks rapidly and the device runs `esp_matter::factory_reset()`. Remove the node from your hub and commission again.
+
+## Contributions
+
+This project is maintained personally. **Suggestions and ideas are welcome** via [Issues](https://github.com/cjcoletti/esp32-sw-matter-ota/issues/new/choose)
+(or Discussions). Please **do not send Pull Requests** — I prefer to implement changes
+myself, at my own pace. You are free to fork under the MIT license.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## License
 
