@@ -1,4 +1,5 @@
 # Contribuindo
+[![Português](https://img.shields.io/badge/Language-Português-blue)](CONTRIBUTING.md)[![English](https://img.shields.io/badge/_English-inactive)](CONTRIBUTING.en.md)
 
 Obrigado pelo interesse no **Magic Button**!
 
@@ -20,9 +21,9 @@ Não é necessário enviar código — prefiro entender a ideia e implementar no
 
 Se algo não funcionou como esperado, use o template **Reportar bug**. Inclua passos para reproduzir, ambiente e logs, se possível.
 
-### Discussions (opcional)
+### Discussions
 
-Se o repositório tiver [Discussions](https://github.com/cjcoletti/esp32-sw-matter-ota/discussions) habilitadas, você também pode usar esse espaço para trocar ideias ou tirar dúvidas de forma mais aberta.
+Você também pode usar [esse espaço](https://github.com/cjcoletti/esp32-sw-matter-ota/discussions) para trocar ideias ou tirar dúvidas de forma mais aberta.
 
 ## O que não aceito
 
@@ -40,6 +41,3 @@ Você pode fazer **fork** livremente e adaptar o projeto às suas necessidades, 
 - Nem toda sugestão será adotada — e tudo bem. Agradeço o tempo de quem compartilha ideias.
 - Respondo quando possível, no tempo que o projeto pessoal permite.
 
-## Versão em inglês
-
-O [README em inglês](README.en.md) descreve o projeto; as Issues podem ser abertas em português ou inglês.

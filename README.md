@@ -30,6 +30,7 @@ esp32-sw-matter-ota/
 ├── README.md
 ├── README.en.md
 ├── CONTRIBUTING.md
+├── CONTRIBUTING.en.md
 ├── LICENSE
 ├── .gitignore
 ├── .github/             # templates de Issues
