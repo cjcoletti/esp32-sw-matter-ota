@@ -1,6 +1,6 @@
 # Magic Button — Matter (ESP32-C6 Super Mini)
 
-[![Português](https://img.shields.io/badge/README-Português-blue)](README.md)[![English](https://img.shields.io/badge/_|_English-blue)](README.en.md)
+[![Português](https://img.shields.io/badge/Language-Português-9cf)](README.md)[![English](https://img.shields.io/badge/_English-blue)](README.en.md)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 

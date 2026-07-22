@@ -1,7 +1,7 @@
 # Magic Button — Matter (ESP32-C6 Super Mini)
 
-[![Português](https://img.shields.io/badge/README-Português-blue)](README.md)
-[![English](https://img.shields.io/badge/README-English-blue)](README.en.md)
+[![Português](https://img.shields.io/badge/Language-Português-blue)](README.md)[![English](https://img.shields.io/badge/_English-9cf)](README.en.md)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Matter Wi-Fi switch (**On/Off Plugin Unit**) built with **ESP-IDF + esp-matter**.
