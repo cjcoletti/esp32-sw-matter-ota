@@ -36,7 +36,6 @@ esp32-sw-matter-ota/
 ├── .gitignore
 ├── .github/             # Issue templates
 ├── docs/                # guides (EN in docs/en/)
-├── enclosure-3D/        # 3D-printable enclosure (STL) for the module
 └── idf/                 # ESP-IDF + esp-matter firmware
     ├── CMakeLists.txt
     ├── partitions.csv
@@ -64,15 +63,11 @@ Simple switch already closed at boot: detected automatically after ~800 ms.
 
 ## 3D enclosure
 
-Compact case to house the **Magic Button** with **ESP32-C6 Super Mini** and Hilink mini PSU — model **V16.3**, snap-fit rails, USB-C opening, and wire pass-through.
+Compact case for the **Magic Button** with **ESP32-C6 Super Mini** and Hilink mini PSU (parametric model **V16.3**).
 
-| Axis | mm |
-|------|-----|
-| Width (X) | **45.0** |
-| Depth (Y) | **38.3** |
-| Assembled height | **24.5** (base 22.5 + lid 2.0) |
+CAD/STL files, dimensions, internal layout, print settings, and fasteners live in a dedicated repository:
 
-Full details (STL files, internal layout, print settings, and fasteners): **[enclosure-3D/README.en.md](enclosure-3D/README.en.md)**. Portuguese version: [enclosure-3D/README.md](enclosure-3D/README.md).
+**[esp32c6-supermini-enclosure](https://github.com/cjcoletti/esp32c6-supermini-enclosure)** — [English README](https://github.com/cjcoletti/esp32c6-supermini-enclosure/blob/main/README.en.md) · [Portuguese README](https://github.com/cjcoletti/esp32c6-supermini-enclosure/blob/main/README.md)
 
 ## Espressif stack environment
 
